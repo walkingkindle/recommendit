@@ -2,6 +2,7 @@ using System.Text;
 using System.Text.Json;
 using AutoMapper;
 using DataRetriever.Models;
+using Microsoft.Extensions.Options;
 using Recommendit.Result;
 using ShowPulse.Models;
 
@@ -16,15 +17,17 @@ public class ShowsRetriever : IShowsRetriever
     private readonly IDatabaseInserter _databaseInserter;
     private readonly ITheMovieDbApiCaller _theMovieDbApiCaller;
     private readonly IConfiguration _configuration;
+    private readonly IOptions<TvDbSettings> _tvDbSettings;
 
     public ShowsRetriever(IMapper mapper, ILogger<ShowsRetriever> logger, ITheMovieDbApiCaller theMovieDbApiCaller,
-        IDatabaseInserter databaseInserter, IConfiguration configuration)
+        IDatabaseInserter databaseInserter, IConfiguration configuration, IOptions<TvDbSettings> tvDbSettings)
     {
         _mapper = mapper;
         _logger = logger;
         _theMovieDbApiCaller = theMovieDbApiCaller;
         _databaseInserter = databaseInserter;
         _configuration = configuration;
+        _tvDbSettings = tvDbSettings;
     }
 
     public async Task<Result> AddShows()
@@ -85,10 +88,7 @@ public class ShowsRetriever : IShowsRetriever
     public async Task<string?> PostLogin()
     {
 
-        var apiKey = "";
-        var apiUrl = "";
-
-        string token = await _theMovieDbApiCaller.PostLogin(apiKey, apiUrl);
+        string token = await _theMovieDbApiCaller.PostLogin(_tvDbSettings.Value.ApiKey, _tvDbSettings.Value.ApiUrl);
 
         return token;
 

@@ -1,8 +1,10 @@
 using System.Collections.Immutable;
 using AutoMapper;
+using DataRetriever.Helpers;
 using DataRetriever.Models;
 using DataRetriever.Services;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
 using Microsoft.OpenApi.Models;
 using Recommendit.Interface;
 using Recommendit.Models;
@@ -42,6 +44,9 @@ public class Startup
         services.AddTransient<ITheMovieDbApiCaller, TheMovieDbApiCaller>();
         services.AddTransient<IShowService,ShowService>();
         services.AddHttpClient<ITheMovieDbApiCaller, TheMovieDbApiCaller>();
+
+        services.Configure<TvDbSettings>(Configuration.GetSection("MovieDb"));
+        services.AddSingleton<IValidateOptions<TvDbSettings>, ApiSettingsValidator>();
     }
 
     public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

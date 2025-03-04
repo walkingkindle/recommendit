@@ -1,4 +1,7 @@
-﻿using Recommendit.Interface;
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.OpenApi.Models;
+using Recommendit.Interface;
+using ShowPulse.Models;
 using ShowPulse.Services;
 
 namespace Recommendit
@@ -14,7 +17,13 @@ namespace Recommendit
 
         public virtual void ConfigureServices(IServiceCollection services)
         {
+            services.AddDbContext<ShowContext>(options =>
+            options.UseSqlServer(_configuration.GetConnectionString("ConnectionStrings:DefaultConnection")));
             services.AddTransient<IShowService, ShowService>();
+            services.AddSwaggerGen(c =>
+        {
+            c.SwaggerDoc("v1", new OpenApiInfo { Title = "RecommenditAPI", Version = "v1" });
+        });
           
         }
 

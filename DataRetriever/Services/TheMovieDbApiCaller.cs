@@ -69,7 +69,6 @@ public class TheMovieDbApiCaller : ITheMovieDbApiCaller
         var login = new Login()
         {
             apikey = apikey,
-            pin = null
         };
 
         var json = JsonSerializer.Serialize(login);
