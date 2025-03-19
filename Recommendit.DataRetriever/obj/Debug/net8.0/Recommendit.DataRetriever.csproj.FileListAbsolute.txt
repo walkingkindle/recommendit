@@ -1,0 +1,17 @@
+C:\Users\akiha\source\repos\Recommendit\Recommendit.DataRetriever\obj\Debug\net8.0\Recommendit.DataRetriever.csproj.AssemblyReference.cache
+C:\Users\akiha\source\repos\Recommendit\Recommendit.DataRetriever\obj\Debug\net8.0\Recommendit.DataRetriever.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\akiha\source\repos\Recommendit\Recommendit.DataRetriever\obj\Debug\net8.0\Recommendit.DataRetriever.AssemblyInfoInputs.cache
+C:\Users\akiha\source\repos\Recommendit\Recommendit.DataRetriever\obj\Debug\net8.0\Recommendit.DataRetriever.AssemblyInfo.cs
+C:\Users\akiha\source\repos\Recommendit\Recommendit.DataRetriever\obj\Debug\net8.0\Recommendit.DataRetriever.csproj.CoreCompileInputs.cache
+C:\Users\akiha\source\repos\Recommendit\Recommendit.DataRetriever\obj\Debug\net8.0\RecommenditDataRetriever.dll
+C:\Users\akiha\source\repos\Recommendit\Recommendit.DataRetriever\obj\Debug\net8.0\refint\RecommenditDataRetriever.dll
+C:\Users\akiha\source\repos\Recommendit\Recommendit.DataRetriever\obj\Debug\net8.0\RecommenditDataRetriever.pdb
+C:\Users\akiha\Source\Repos\recommendit\Recommendit.DataRetriever\bin\Debug\net8.0\RecommenditDataRetriever.deps.json
+C:\Users\akiha\Source\Repos\recommendit\Recommendit.DataRetriever\bin\Debug\net8.0\RecommenditDataRetriever.dll
+C:\Users\akiha\Source\Repos\recommendit\Recommendit.DataRetriever\bin\Debug\net8.0\RecommenditDataRetriever.pdb
+C:\Users\akiha\Source\Repos\recommendit\Recommendit.DataRetriever\bin\Debug\net8.0\Recommendit.Common.dll
+C:\Users\akiha\Source\Repos\recommendit\Recommendit.DataRetriever\bin\Debug\net8.0\Recommendit.Infrastructure.dll
+C:\Users\akiha\Source\Repos\recommendit\Recommendit.DataRetriever\bin\Debug\net8.0\Recommendit.Common.pdb
+C:\Users\akiha\Source\Repos\recommendit\Recommendit.DataRetriever\bin\Debug\net8.0\Recommendit.Infrastructure.pdb
+C:\Users\akiha\Source\Repos\recommendit\Recommendit.DataRetriever\obj\Debug\net8.0\Recommen.9F442E71.Up2Date
+C:\Users\akiha\Source\Repos\recommendit\Recommendit.DataRetriever\obj\Debug\net8.0\ref\RecommenditDataRetriever.dll

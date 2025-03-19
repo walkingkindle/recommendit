@@ -1,0 +1,647 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\akiha\\source\\repos\\recommendit\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C5F57183-31CB-4BA9-A011-BD17D54D7D50}|..\\Recommendit.Infrastructure\\Recommendit.Infrastructure.csproj|c:\\users\\akiha\\source\\repos\\recommendit.infrastructure\\showinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7198CE68-7631-4B10-A5C3-097DFA5076DC}|DataRetriever\\DataRetriever.csproj|c:\\users\\akiha\\source\\repos\\recommendit\\dataretriever\\services\\showsretriever.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7198CE68-7631-4B10-A5C3-097DFA5076DC}|DataRetriever\\DataRetriever.csproj|solutionrelative:dataretriever\\services\\showsretriever.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\akiha\\source\\repos\\Recommendit.Infrastructure\\Migrations\\20250319115741_ColumnLength.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\akiha\\source\\repos\\Recommendit.Infrastructure\\Migrations\\20250319115656_ColumnLength.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7198CE68-7631-4B10-A5C3-097DFA5076DC}|DataRetriever\\DataRetriever.csproj|c:\\users\\akiha\\source\\repos\\recommendit\\dataretriever\\services\\databaseinserter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7198CE68-7631-4B10-A5C3-097DFA5076DC}|DataRetriever\\DataRetriever.csproj|solutionrelative:dataretriever\\services\\databaseinserter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5F57183-31CB-4BA9-A011-BD17D54D7D50}|..\\Recommendit.Infrastructure\\Recommendit.Infrastructure.csproj|c:\\users\\akiha\\source\\repos\\recommendit.infrastructure\\recommendit.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7198CE68-7631-4B10-A5C3-097DFA5076DC}|DataRetriever\\DataRetriever.csproj|c:\\users\\akiha\\source\\repos\\recommendit\\dataretriever\\models\\ishowsretriever.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7198CE68-7631-4B10-A5C3-097DFA5076DC}|DataRetriever\\DataRetriever.csproj|solutionrelative:dataretriever\\models\\ishowsretriever.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7198CE68-7631-4B10-A5C3-097DFA5076DC}|DataRetriever\\DataRetriever.csproj|c:\\users\\akiha\\source\\repos\\recommendit\\dataretriever\\models\\showvectorretrievaldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7198CE68-7631-4B10-A5C3-097DFA5076DC}|DataRetriever\\DataRetriever.csproj|solutionrelative:dataretriever\\models\\showvectorretrievaldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1C03319-F0F4-4CDF-8078-2D4A257AAC0F}|Recommendit.csproj|c:\\users\\akiha\\source\\repos\\recommendit\\controllers\\showscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1C03319-F0F4-4CDF-8078-2D4A257AAC0F}|Recommendit.csproj|solutionrelative:controllers\\showscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7198CE68-7631-4B10-A5C3-097DFA5076DC}|DataRetriever\\DataRetriever.csproj|c:\\users\\akiha\\source\\repos\\recommendit\\dataretriever\\models\\vectorresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7198CE68-7631-4B10-A5C3-097DFA5076DC}|DataRetriever\\DataRetriever.csproj|solutionrelative:dataretriever\\models\\vectorresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1C03319-F0F4-4CDF-8078-2D4A257AAC0F}|Recommendit.csproj|c:\\users\\akiha\\source\\repos\\recommendit\\recommendit.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{C1C03319-F0F4-4CDF-8078-2D4A257AAC0F}|Recommendit.csproj|solutionrelative:recommendit.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7198CE68-7631-4B10-A5C3-097DFA5076DC}|DataRetriever\\DataRetriever.csproj|c:\\users\\akiha\\source\\repos\\recommendit\\dataretriever\\services\\themoviedbapicaller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7198CE68-7631-4B10-A5C3-097DFA5076DC}|DataRetriever\\DataRetriever.csproj|solutionrelative:dataretriever\\services\\themoviedbapicaller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1C03319-F0F4-4CDF-8078-2D4A257AAC0F}|Recommendit.csproj|c:\\users\\akiha\\source\\repos\\recommendit\\services\\vectoraiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1C03319-F0F4-4CDF-8078-2D4A257AAC0F}|Recommendit.csproj|solutionrelative:services\\vectoraiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1C03319-F0F4-4CDF-8078-2D4A257AAC0F}|Recommendit.csproj|c:\\users\\akiha\\source\\repos\\recommendit\\models\\ivectorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1C03319-F0F4-4CDF-8078-2D4A257AAC0F}|Recommendit.csproj|solutionrelative:models\\ivectorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1C03319-F0F4-4CDF-8078-2D4A257AAC0F}|Recommendit.csproj|c:\\users\\akiha\\source\\repos\\recommendit\\services\\showservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1C03319-F0F4-4CDF-8078-2D4A257AAC0F}|Recommendit.csproj|solutionrelative:services\\showservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1C03319-F0F4-4CDF-8078-2D4A257AAC0F}|Recommendit.csproj|c:\\users\\akiha\\source\\repos\\recommendit\\interface\\ishowservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1C03319-F0F4-4CDF-8078-2D4A257AAC0F}|Recommendit.csproj|solutionrelative:interface\\ishowservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5F57183-31CB-4BA9-A011-BD17D54D7D50}|..\\Recommendit.Infrastructure\\Recommendit.Infrastructure.csproj|c:\\users\\akiha\\source\\repos\\recommendit.infrastructure\\showcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7198CE68-7631-4B10-A5C3-097DFA5076DC}|DataRetriever\\DataRetriever.csproj|c:\\users\\akiha\\source\\repos\\recommendit\\dataretriever\\models\\idatabaseoperator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7198CE68-7631-4B10-A5C3-097DFA5076DC}|DataRetriever\\DataRetriever.csproj|solutionrelative:dataretriever\\models\\idatabaseoperator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01720A71-CE3A-4B72-8A1F-B97DC50EF654}|..\\VectorMaker\\VectorMaker.pyproj|C:\\Users\\akiha\\Source\\Repos\\VectorMaker\\VectorMaker.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1C03319-F0F4-4CDF-8078-2D4A257AAC0F}|Recommendit.csproj|c:\\users\\akiha\\source\\repos\\recommendit\\controllers\\retrievercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1C03319-F0F4-4CDF-8078-2D4A257AAC0F}|Recommendit.csproj|solutionrelative:controllers\\retrievercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7198CE68-7631-4B10-A5C3-097DFA5076DC}|DataRetriever\\DataRetriever.csproj|c:\\users\\akiha\\source\\repos\\recommendit\\dataretriever\\models\\ithemoviedbapicaller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7198CE68-7631-4B10-A5C3-097DFA5076DC}|DataRetriever\\DataRetriever.csproj|solutionrelative:dataretriever\\models\\ithemoviedbapicaller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7198CE68-7631-4B10-A5C3-097DFA5076DC}|DataRetriever\\DataRetriever.csproj|c:\\users\\akiha\\source\\repos\\recommendit\\dataretriever\\models\\showstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7198CE68-7631-4B10-A5C3-097DFA5076DC}|DataRetriever\\DataRetriever.csproj|solutionrelative:dataretriever\\models\\showstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1C03319-F0F4-4CDF-8078-2D4A257AAC0F}|Recommendit.csproj|c:\\users\\akiha\\source\\repos\\recommendit\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1C03319-F0F4-4CDF-8078-2D4A257AAC0F}|Recommendit.csproj|solutionrelative:startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1C03319-F0F4-4CDF-8078-2D4A257AAC0F}|Recommendit.csproj|c:\\users\\akiha\\source\\repos\\recommendit\\helpers\\showmappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1C03319-F0F4-4CDF-8078-2D4A257AAC0F}|Recommendit.csproj|solutionrelative:helpers\\showmappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5F57183-31CB-4BA9-A011-BD17D54D7D50}|..\\Recommendit.Infrastructure\\Recommendit.Infrastructure.csproj|c:\\users\\akiha\\source\\repos\\recommendit.infrastructure\\show.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\akiha\\source\\repos\\Recommendit.Infrastructure\\Migrations\\20250318142926_Change.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1C03319-F0F4-4CDF-8078-2D4A257AAC0F}|Recommendit.csproj|c:\\users\\akiha\\source\\repos\\recommendit\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C1C03319-F0F4-4CDF-8078-2D4A257AAC0F}|Recommendit.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7198CE68-7631-4B10-A5C3-097DFA5076DC}|DataRetriever\\DataRetriever.csproj|c:\\users\\akiha\\source\\repos\\recommendit\\dataretriever\\models\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7198CE68-7631-4B10-A5C3-097DFA5076DC}|DataRetriever\\DataRetriever.csproj|solutionrelative:dataretriever\\models\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F145D822-8ECC-40C1-AF69-DC374DB23CF4}|..\\Recommendit.Common\\Recommendit.Common.csproj|c:\\users\\akiha\\source\\repos\\recommendit.common\\tvdbsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7198CE68-7631-4B10-A5C3-097DFA5076DC}|DataRetriever\\DataRetriever.csproj|c:\\users\\akiha\\source\\repos\\recommendit\\dataretriever\\models\\showdatadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7198CE68-7631-4B10-A5C3-097DFA5076DC}|DataRetriever\\DataRetriever.csproj|solutionrelative:dataretriever\\models\\showdatadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1C03319-F0F4-4CDF-8078-2D4A257AAC0F}|Recommendit.csproj|c:\\users\\akiha\\source\\repos\\recommendit\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1C03319-F0F4-4CDF-8078-2D4A257AAC0F}|Recommendit.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F145D822-8ECC-40C1-AF69-DC374DB23CF4}|..\\Recommendit.Common\\Recommendit.Common.csproj|c:\\users\\akiha\\source\\repos\\recommendit.common\\helpers\\apisettingsvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1C03319-F0F4-4CDF-8078-2D4A257AAC0F}|Recommendit.csproj|c:\\users\\akiha\\source\\repos\\recommendit\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{C1C03319-F0F4-4CDF-8078-2D4A257AAC0F}|Recommendit.csproj|solutionrelative:.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F145D822-8ECC-40C1-AF69-DC374DB23CF4}|..\\Recommendit.Common\\Recommendit.Common.csproj|c:\\users\\akiha\\source\\repos\\recommendit.common\\helpers\\listextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7198CE68-7631-4B10-A5C3-097DFA5076DC}|DataRetriever\\DataRetriever.csproj|c:\\users\\akiha\\source\\repos\\recommendit\\dataretriever\\dataretriever.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{7198CE68-7631-4B10-A5C3-097DFA5076DC}|DataRetriever\\DataRetriever.csproj|solutionrelative:dataretriever\\dataretriever.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1C03319-F0F4-4CDF-8078-2D4A257AAC0F}|Recommendit.csproj|c:\\users\\akiha\\source\\repos\\recommendit\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C1C03319-F0F4-4CDF-8078-2D4A257AAC0F}|Recommendit.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5F57183-31CB-4BA9-A011-BD17D54D7D50}|..\\Recommendit.Infrastructure\\Recommendit.Infrastructure.csproj|c:\\users\\akiha\\source\\repos\\recommendit.infrastructure\\migrations\\20250318141117_nullimageurl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5F57183-31CB-4BA9-A011-BD17D54D7D50}|..\\Recommendit.Infrastructure\\Recommendit.Infrastructure.csproj|c:\\users\\akiha\\source\\repos\\recommendit.infrastructure\\migrations\\20250318140635_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "20250319115741_ColumnLength.cs",
+              "DocumentMoniker": "C:\\Users\\akiha\\source\\repos\\Recommendit.Infrastructure\\Migrations\\20250319115741_ColumnLength.cs",
+              "RelativeDocumentMoniker": "..\\Recommendit.Infrastructure\\Migrations\\20250319115741_ColumnLength.cs",
+              "ToolTip": "C:\\Users\\akiha\\source\\repos\\Recommendit.Infrastructure\\Migrations\\20250319115741_ColumnLength.cs",
+              "RelativeToolTip": "..\\Recommendit.Infrastructure\\Migrations\\20250319115741_ColumnLength.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T11:57:41.796Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "20250319115656_ColumnLength.cs",
+              "DocumentMoniker": "C:\\Users\\akiha\\source\\repos\\Recommendit.Infrastructure\\Migrations\\20250319115656_ColumnLength.cs",
+              "RelativeDocumentMoniker": "..\\Recommendit.Infrastructure\\Migrations\\20250319115656_ColumnLength.cs",
+              "ToolTip": "C:\\Users\\akiha\\source\\repos\\Recommendit.Infrastructure\\Migrations\\20250319115656_ColumnLength.cs",
+              "RelativeToolTip": "..\\Recommendit.Infrastructure\\Migrations\\20250319115656_ColumnLength.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T11:56:56.368Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ShowInfo.cs",
+              "DocumentMoniker": "C:\\Users\\akiha\\source\\repos\\Recommendit.Infrastructure\\ShowInfo.cs",
+              "RelativeDocumentMoniker": "..\\Recommendit.Infrastructure\\ShowInfo.cs",
+              "ToolTip": "C:\\Users\\akiha\\source\\repos\\Recommendit.Infrastructure\\ShowInfo.cs",
+              "RelativeToolTip": "..\\Recommendit.Infrastructure\\ShowInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAoAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T11:11:23.263Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ShowsRetriever.cs",
+              "DocumentMoniker": "C:\\Users\\akiha\\source\\repos\\recommendit\\DataRetriever\\Services\\ShowsRetriever.cs",
+              "RelativeDocumentMoniker": "DataRetriever\\Services\\ShowsRetriever.cs",
+              "ToolTip": "C:\\Users\\akiha\\source\\repos\\recommendit\\DataRetriever\\Services\\ShowsRetriever.cs",
+              "RelativeToolTip": "DataRetriever\\Services\\ShowsRetriever.cs",
+              "ViewState": "AgIAAHwAAAAAAAAAAAAgwIoAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T12:36:05.475Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Recommendit.Infrastructure.csproj",
+              "DocumentMoniker": "C:\\Users\\akiha\\Source\\Repos\\Recommendit.Infrastructure\\Recommendit.Infrastructure.csproj",
+              "RelativeDocumentMoniker": "..\\Recommendit.Infrastructure\\Recommendit.Infrastructure.csproj",
+              "ToolTip": "C:\\Users\\akiha\\Source\\Repos\\Recommendit.Infrastructure\\Recommendit.Infrastructure.csproj",
+              "RelativeToolTip": "..\\Recommendit.Infrastructure\\Recommendit.Infrastructure.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-18T13:01:34.423Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IShowsRetriever.cs",
+              "DocumentMoniker": "C:\\Users\\akiha\\source\\repos\\recommendit\\DataRetriever\\Models\\IShowsRetriever.cs",
+              "RelativeDocumentMoniker": "DataRetriever\\Models\\IShowsRetriever.cs",
+              "ToolTip": "C:\\Users\\akiha\\source\\repos\\recommendit\\DataRetriever\\Models\\IShowsRetriever.cs",
+              "RelativeToolTip": "DataRetriever\\Models\\IShowsRetriever.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAswA8AAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T12:35:50.71Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Recommendit.csproj",
+              "DocumentMoniker": "C:\\Users\\akiha\\Source\\Repos\\recommendit\\Recommendit.csproj",
+              "RelativeDocumentMoniker": "Recommendit.csproj",
+              "ToolTip": "C:\\Users\\akiha\\Source\\Repos\\recommendit\\Recommendit.csproj",
+              "RelativeToolTip": "Recommendit.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-18T12:36:21.903Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ShowVectorRetrievalDto.cs",
+              "DocumentMoniker": "C:\\Users\\akiha\\source\\repos\\recommendit\\DataRetriever\\Models\\ShowVectorRetrievalDto.cs",
+              "RelativeDocumentMoniker": "DataRetriever\\Models\\ShowVectorRetrievalDto.cs",
+              "ToolTip": "C:\\Users\\akiha\\source\\repos\\recommendit\\DataRetriever\\Models\\ShowVectorRetrievalDto.cs",
+              "RelativeToolTip": "DataRetriever\\Models\\ShowVectorRetrievalDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T16:35:57.517Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ShowsController.cs",
+              "DocumentMoniker": "C:\\Users\\akiha\\source\\repos\\recommendit\\Controllers\\ShowsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ShowsController.cs",
+              "ToolTip": "C:\\Users\\akiha\\source\\repos\\recommendit\\Controllers\\ShowsController.cs",
+              "RelativeToolTip": "Controllers\\ShowsController.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAgwDsAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T12:41:26.535Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IVectorService.cs",
+              "DocumentMoniker": "C:\\Users\\akiha\\source\\repos\\recommendit\\Models\\IVectorService.cs",
+              "RelativeDocumentMoniker": "Models\\IVectorService.cs",
+              "ToolTip": "C:\\Users\\akiha\\source\\repos\\recommendit\\Models\\IVectorService.cs",
+              "RelativeToolTip": "Models\\IVectorService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T12:30:48.275Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DatabaseInserter.cs",
+              "DocumentMoniker": "C:\\Users\\akiha\\source\\repos\\recommendit\\DataRetriever\\Services\\DatabaseInserter.cs",
+              "RelativeDocumentMoniker": "DataRetriever\\Services\\DatabaseInserter.cs",
+              "ToolTip": "C:\\Users\\akiha\\source\\repos\\recommendit\\DataRetriever\\Services\\DatabaseInserter.cs",
+              "RelativeToolTip": "DataRetriever\\Services\\DatabaseInserter.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAgwCsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T12:35:59.423Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "TheMovieDbApiCaller.cs",
+              "DocumentMoniker": "C:\\Users\\akiha\\source\\repos\\recommendit\\DataRetriever\\Services\\TheMovieDbApiCaller.cs",
+              "RelativeDocumentMoniker": "DataRetriever\\Services\\TheMovieDbApiCaller.cs",
+              "ToolTip": "C:\\Users\\akiha\\source\\repos\\recommendit\\DataRetriever\\Services\\TheMovieDbApiCaller.cs",
+              "RelativeToolTip": "DataRetriever\\Services\\TheMovieDbApiCaller.cs",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAmwBcAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T13:25:35.585Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "VectorAIService.cs",
+              "DocumentMoniker": "C:\\Users\\akiha\\source\\repos\\recommendit\\Services\\VectorAIService.cs",
+              "RelativeDocumentMoniker": "Services\\VectorAIService.cs",
+              "ToolTip": "C:\\Users\\akiha\\source\\repos\\recommendit\\Services\\VectorAIService.cs",
+              "RelativeToolTip": "Services\\VectorAIService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T12:31:22.554Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "VectorResponse.cs",
+              "DocumentMoniker": "C:\\Users\\akiha\\source\\repos\\recommendit\\DataRetriever\\Models\\VectorResponse.cs",
+              "RelativeDocumentMoniker": "DataRetriever\\Models\\VectorResponse.cs",
+              "ToolTip": "C:\\Users\\akiha\\source\\repos\\recommendit\\DataRetriever\\Models\\VectorResponse.cs",
+              "RelativeToolTip": "DataRetriever\\Models\\VectorResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAoAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T11:16:09.833Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ShowService.cs",
+              "DocumentMoniker": "C:\\Users\\akiha\\source\\repos\\recommendit\\Services\\ShowService.cs",
+              "RelativeDocumentMoniker": "Services\\ShowService.cs",
+              "ToolTip": "C:\\Users\\akiha\\source\\repos\\recommendit\\Services\\ShowService.cs",
+              "RelativeToolTip": "Services\\ShowService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAoAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T11:29:19.89Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "IShowService.cs",
+              "DocumentMoniker": "C:\\Users\\akiha\\source\\repos\\recommendit\\Interface\\IShowService.cs",
+              "RelativeDocumentMoniker": "Interface\\IShowService.cs",
+              "ToolTip": "C:\\Users\\akiha\\source\\repos\\recommendit\\Interface\\IShowService.cs",
+              "RelativeToolTip": "Interface\\IShowService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T16:51:10.052Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ShowContext.cs",
+              "DocumentMoniker": "C:\\Users\\akiha\\source\\repos\\Recommendit.Infrastructure\\ShowContext.cs",
+              "RelativeDocumentMoniker": "..\\Recommendit.Infrastructure\\ShowContext.cs",
+              "ToolTip": "C:\\Users\\akiha\\source\\repos\\Recommendit.Infrastructure\\ShowContext.cs",
+              "RelativeToolTip": "..\\Recommendit.Infrastructure\\ShowContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T13:50:03.846Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "IDatabaseOperator.cs",
+              "DocumentMoniker": "C:\\Users\\akiha\\source\\repos\\recommendit\\DataRetriever\\Models\\IDatabaseOperator.cs",
+              "RelativeDocumentMoniker": "DataRetriever\\Models\\IDatabaseOperator.cs",
+              "ToolTip": "C:\\Users\\akiha\\source\\repos\\recommendit\\DataRetriever\\Models\\IDatabaseOperator.cs",
+              "RelativeToolTip": "DataRetriever\\Models\\IDatabaseOperator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAUAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T12:35:56.298Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "VectorMaker.py",
+              "DocumentMoniker": "C:\\Users\\akiha\\source\\repos\\VectorMaker\\VectorMaker.py",
+              "RelativeDocumentMoniker": "..\\VectorMaker\\VectorMaker.py",
+              "ToolTip": "C:\\Users\\akiha\\source\\repos\\VectorMaker\\VectorMaker.py",
+              "RelativeToolTip": "..\\VectorMaker\\VectorMaker.py",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAABAAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2025-03-18T16:13:11.241Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ITheMovieDbApiCaller.cs",
+              "DocumentMoniker": "C:\\Users\\akiha\\source\\repos\\recommendit\\DataRetriever\\Models\\ITheMovieDbApiCaller.cs",
+              "RelativeDocumentMoniker": "DataRetriever\\Models\\ITheMovieDbApiCaller.cs",
+              "ToolTip": "C:\\Users\\akiha\\source\\repos\\recommendit\\DataRetriever\\Models\\ITheMovieDbApiCaller.cs",
+              "RelativeToolTip": "DataRetriever\\Models\\ITheMovieDbApiCaller.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T13:48:03.251Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Startup.cs",
+              "DocumentMoniker": "C:\\Users\\akiha\\source\\repos\\recommendit\\Startup.cs",
+              "RelativeDocumentMoniker": "Startup.cs",
+              "ToolTip": "C:\\Users\\akiha\\source\\repos\\recommendit\\Startup.cs",
+              "RelativeToolTip": "Startup.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAwwCIAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-04T14:57:49.174Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "RetrieverController.cs",
+              "DocumentMoniker": "C:\\Users\\akiha\\source\\repos\\recommendit\\Controllers\\RetrieverController.cs",
+              "RelativeDocumentMoniker": "Controllers\\RetrieverController.cs",
+              "ToolTip": "C:\\Users\\akiha\\source\\repos\\recommendit\\Controllers\\RetrieverController.cs",
+              "RelativeToolTip": "Controllers\\RetrieverController.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAgwCwAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T12:40:09.478Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ShowStatus.cs",
+              "DocumentMoniker": "C:\\Users\\akiha\\source\\repos\\recommendit\\DataRetriever\\Models\\ShowStatus.cs",
+              "RelativeDocumentMoniker": "DataRetriever\\Models\\ShowStatus.cs",
+              "ToolTip": "C:\\Users\\akiha\\source\\repos\\recommendit\\DataRetriever\\Models\\ShowStatus.cs",
+              "RelativeToolTip": "DataRetriever\\Models\\ShowStatus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T16:51:50.762Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ShowMappingProfile.cs",
+              "DocumentMoniker": "C:\\Users\\akiha\\source\\repos\\recommendit\\Helpers\\ShowMappingProfile.cs",
+              "RelativeDocumentMoniker": "Helpers\\ShowMappingProfile.cs",
+              "ToolTip": "C:\\Users\\akiha\\source\\repos\\recommendit\\Helpers\\ShowMappingProfile.cs",
+              "RelativeToolTip": "Helpers\\ShowMappingProfile.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAQwBAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T13:44:26.993Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "TvDbSettings.cs",
+              "DocumentMoniker": "C:\\Users\\akiha\\source\\repos\\Recommendit.Common\\TvDbSettings.cs",
+              "RelativeDocumentMoniker": "..\\Recommendit.Common\\TvDbSettings.cs",
+              "ToolTip": "C:\\Users\\akiha\\source\\repos\\Recommendit.Common\\TvDbSettings.cs",
+              "RelativeToolTip": "..\\Recommendit.Common\\TvDbSettings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T13:18:13.193Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\akiha\\source\\repos\\recommendit\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\akiha\\source\\repos\\recommendit\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T12:36:43.623Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "20250318142926_Change.cs",
+              "DocumentMoniker": "C:\\Users\\akiha\\source\\repos\\Recommendit.Infrastructure\\Migrations\\20250318142926_Change.cs",
+              "RelativeDocumentMoniker": "..\\Recommendit.Infrastructure\\Migrations\\20250318142926_Change.cs",
+              "ToolTip": "C:\\Users\\akiha\\source\\repos\\Recommendit.Infrastructure\\Migrations\\20250318142926_Change.cs",
+              "RelativeToolTip": "..\\Recommendit.Infrastructure\\Migrations\\20250318142926_Change.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T14:29:26.428Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Show.cs",
+              "DocumentMoniker": "C:\\Users\\akiha\\source\\repos\\Recommendit.Infrastructure\\Show.cs",
+              "RelativeDocumentMoniker": "..\\Recommendit.Infrastructure\\Show.cs",
+              "ToolTip": "C:\\Users\\akiha\\source\\repos\\Recommendit.Infrastructure\\Show.cs",
+              "RelativeToolTip": "..\\Recommendit.Infrastructure\\Show.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwA8AAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T12:24:42.493Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "20250318141117_NullImageUrl.cs",
+              "DocumentMoniker": "C:\\Users\\akiha\\source\\repos\\Recommendit.Infrastructure\\Migrations\\20250318141117_NullImageUrl.cs",
+              "RelativeDocumentMoniker": "..\\Recommendit.Infrastructure\\Migrations\\20250318141117_NullImageUrl.cs",
+              "ToolTip": "C:\\Users\\akiha\\source\\repos\\Recommendit.Infrastructure\\Migrations\\20250318141117_NullImageUrl.cs",
+              "RelativeToolTip": "..\\Recommendit.Infrastructure\\Migrations\\20250318141117_NullImageUrl.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T14:11:17.88Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "20250318140635_Init.cs",
+              "DocumentMoniker": "C:\\Users\\akiha\\source\\repos\\Recommendit.Infrastructure\\Migrations\\20250318140635_Init.cs",
+              "RelativeDocumentMoniker": "..\\Recommendit.Infrastructure\\Migrations\\20250318140635_Init.cs",
+              "ToolTip": "C:\\Users\\akiha\\source\\repos\\Recommendit.Infrastructure\\Migrations\\20250318140635_Init.cs",
+              "RelativeToolTip": "..\\Recommendit.Infrastructure\\Migrations\\20250318140635_Init.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T14:06:35.889Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "ShowDataDto.cs",
+              "DocumentMoniker": "C:\\Users\\akiha\\source\\repos\\recommendit\\DataRetriever\\Models\\ShowDataDto.cs",
+              "RelativeDocumentMoniker": "DataRetriever\\Models\\ShowDataDto.cs",
+              "ToolTip": "C:\\Users\\akiha\\source\\repos\\recommendit\\DataRetriever\\Models\\ShowDataDto.cs",
+              "RelativeToolTip": "DataRetriever\\Models\\ShowDataDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T13:39:31.738Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\akiha\\source\\repos\\recommendit\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\akiha\\source\\repos\\recommendit\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAB6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-18T13:15:42.618Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "ApiResponse.cs",
+              "DocumentMoniker": "C:\\Users\\akiha\\source\\repos\\recommendit\\DataRetriever\\Models\\ApiResponse.cs",
+              "RelativeDocumentMoniker": "DataRetriever\\Models\\ApiResponse.cs",
+              "ToolTip": "C:\\Users\\akiha\\source\\repos\\recommendit\\DataRetriever\\Models\\ApiResponse.cs",
+              "RelativeToolTip": "DataRetriever\\Models\\ApiResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T13:48:42.029Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "DataRetriever.csproj",
+              "DocumentMoniker": "C:\\Users\\akiha\\Source\\Repos\\recommendit\\DataRetriever\\DataRetriever.csproj",
+              "RelativeDocumentMoniker": "DataRetriever\\DataRetriever.csproj",
+              "ToolTip": "C:\\Users\\akiha\\Source\\Repos\\recommendit\\DataRetriever\\DataRetriever.csproj",
+              "RelativeToolTip": "DataRetriever\\DataRetriever.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-18T12:35:41.206Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "ListExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\akiha\\source\\repos\\Recommendit.Common\\Helpers\\ListExtensions.cs",
+              "RelativeDocumentMoniker": "..\\Recommendit.Common\\Helpers\\ListExtensions.cs",
+              "ToolTip": "C:\\Users\\akiha\\source\\repos\\Recommendit.Common\\Helpers\\ListExtensions.cs",
+              "RelativeToolTip": "..\\Recommendit.Common\\Helpers\\ListExtensions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T13:07:06.635Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "ApiSettingsValidator.cs",
+              "DocumentMoniker": "C:\\Users\\akiha\\source\\repos\\Recommendit.Common\\Helpers\\ApiSettingsValidator.cs",
+              "RelativeDocumentMoniker": "..\\Recommendit.Common\\Helpers\\ApiSettingsValidator.cs",
+              "ToolTip": "C:\\Users\\akiha\\source\\repos\\Recommendit.Common\\Helpers\\ApiSettingsValidator.cs",
+              "RelativeToolTip": "..\\Recommendit.Common\\Helpers\\ApiSettingsValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T13:07:07.909Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": ".gitignore",
+              "DocumentMoniker": "C:\\Users\\akiha\\source\\repos\\recommendit\\.gitignore",
+              "RelativeDocumentMoniker": ".gitignore",
+              "ToolTip": "C:\\Users\\akiha\\source\\repos\\recommendit\\.gitignore",
+              "RelativeToolTip": ".gitignore",
+              "ViewState": "AgIAAFUAAAAAAAAAAAAAAHMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-03-18T13:11:07.546Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\akiha\\source\\repos\\recommendit\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\akiha\\source\\repos\\recommendit\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-18T12:59:19.374Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
