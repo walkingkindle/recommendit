@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Recommendit.Common")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d6f38fdac72d1325c38da2caf28b407e921181ff")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d3f43a248dad65747469b64e586ec163898a5604")]
 [assembly: System.Reflection.AssemblyProductAttribute("Recommendit.Common")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Recommendit.Common")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
