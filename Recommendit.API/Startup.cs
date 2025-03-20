@@ -17,6 +17,8 @@ namespace Recommendit
      public class Startup
     {
         private readonly IConfiguration _configuration;
+        private readonly string MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
+
 
         public Startup(IConfiguration configuration)
         {
@@ -37,6 +39,15 @@ namespace Recommendit
             services.AddHttpClient<ITheMovieDbApiCaller, TheMovieDbApiCaller>();
 
             services.AddHttpClient<IShowsRetriever, ShowsRetriever>();
+
+            services.AddCors(options =>
+            {
+                options.AddPolicy(name: MyAllowSpecificOrigins,
+                    policy =>
+                    {
+                        policy.WithOrigins("http://localhost:4200");
+                    });
+            });
 
             services.Configure<TvDbSettings>(_configuration.GetSection("MovieDb"));
             services.AddSingleton<IValidateOptions<TvDbSettings>, ApiSettingsValidator>();
@@ -67,6 +78,7 @@ namespace Recommendit
                 });
             }
 
+            app.UseCors(MyAllowSpecificOrigins);
 
             app.UseRouting();
 

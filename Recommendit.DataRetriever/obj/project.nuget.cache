@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lUTDgrntUvk=",
+  "dgSpecHash": "im4+8WOQDqY=",
   "success": true,
-  "projectFilePath": "C:\\Users\\akiha\\source\\repos\\Recommendit\\recommendit2.0\\Recommendit.DataRetriever\\Recommendit.DataRetriever.csproj",
+  "projectFilePath": "C:\\Projects\\Recommendit\\Recommendit.DataRetriever\\Recommendit.DataRetriever.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\akiha\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\akiha\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",

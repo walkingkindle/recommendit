@@ -4047,11 +4047,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\akiha\\source\\repos\\Recommendit\\recommendit2.0\\Recommendit.Infrastructure\\Recommendit.Infrastructure.csproj",
+      "projectUniqueName": "C:\\Projects\\Recommendit\\Recommendit.Infrastructure\\Recommendit.Infrastructure.csproj",
       "projectName": "Recommendit.Infrastructure",
-      "projectPath": "C:\\Users\\akiha\\source\\repos\\Recommendit\\recommendit2.0\\Recommendit.Infrastructure\\Recommendit.Infrastructure.csproj",
+      "projectPath": "C:\\Projects\\Recommendit\\Recommendit.Infrastructure\\Recommendit.Infrastructure.csproj",
       "packagesPath": "C:\\Users\\akiha\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\akiha\\source\\repos\\Recommendit\\recommendit2.0\\Recommendit.Infrastructure\\obj\\",
+      "outputPath": "C:\\Projects\\Recommendit\\Recommendit.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

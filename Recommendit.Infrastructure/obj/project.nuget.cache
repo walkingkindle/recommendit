@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0tAPCeKDAh8=",
+  "dgSpecHash": "XxA1DYIiipQ=",
   "success": true,
-  "projectFilePath": "C:\\Users\\akiha\\source\\repos\\Recommendit\\recommendit2.0\\Recommendit.Infrastructure\\Recommendit.Infrastructure.csproj",
+  "projectFilePath": "C:\\Projects\\Recommendit\\Recommendit.Infrastructure\\Recommendit.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\akiha\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\akiha\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
