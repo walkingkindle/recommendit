@@ -157,7 +157,7 @@ public class ShowsRetriever : IShowsRetriever
             return Result.Failure(APIErrrors.ApiResponseError);
         }
 
-        List<ShowInfo> showInfos = response.Select(x => new ShowInfo { Id = x.Id, ShowId = x.Id, VectorDouble = x.Embeddings }).ToList();
+        List<ShowInfo> showInfos = response.Select(x => new ShowInfo {ShowId = x.Id, VectorDouble = x.Embeddings }).ToList();
 
         await _databaseInserter.SaveVectorsToShowInfo(showInfos);
 

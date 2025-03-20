@@ -3,5 +3,12 @@
 ################################################################################
 
 /Recommendit.API/obj
+/Recommendit.API/bin
 /Recommendit.API/appsettings.json
 /.vs/Recommendit/FileContentIndex
+/Recommendit.Common/obj
+/Recommendit.Common/bin
+/Recommendit.DataRetriever/obj
+/Recommendit.DataRetriever/bin
+
+/.vs

@@ -8,6 +8,8 @@ using Microsoft.OpenApi.Models;
 using Recommendit.Common.Helpers;
 using Recommendit.Infrastructure;
 using Recommendit.Interface;
+using Recommendit.Models;
+using ShowPulse.Engine;
 using ShowPulse.Services;
 
 namespace Recommendit
@@ -29,6 +31,8 @@ namespace Recommendit
             services.AddTransient<IShowsRetriever, ShowsRetriever>();
             services.AddTransient<IDatabaseOperator, DatabaseOperator>();
             services.AddTransient<ITheMovieDbApiCaller, TheMovieDbApiCaller>();
+
+            services.AddTransient<IVectorService, VectorAIService>();
 
             services.AddHttpClient<ITheMovieDbApiCaller, TheMovieDbApiCaller>();
 

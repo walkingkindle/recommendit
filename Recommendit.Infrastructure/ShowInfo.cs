@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Recommendit.Infrastructure
 {
@@ -6,7 +7,8 @@ namespace Recommendit.Infrastructure
     {
         public int Id { get; set; }
 
-        [MaxLength(8500)]
+        [MaxLength(8200)]
+        [Column(TypeName ="varchar(8200)")]
         public required string VectorDouble { get; set; }
         
         public int ShowId { get; set; }

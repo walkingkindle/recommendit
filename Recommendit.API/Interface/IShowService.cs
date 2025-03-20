@@ -5,7 +5,7 @@ namespace Recommendit.Interface
 {
     public interface IShowService
     {
-        //Task<Result<List<Show>>> GetRecommendedShowsWithCosineSimilarity(List<int> showIds, int topN = 5);
+        Task<Result<List<Show>>> GetRecommendedShowsWithCosineSimilarity(List<int> showIds, int topN = 5);
 
 
         Task<Result<List<Show>>> GetShowsExactMatchingRecordsAsync(string input);

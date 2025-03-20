@@ -29,28 +29,21 @@ namespace ShowPulse.Controllers
 
         //GET: api/records
         [HttpGet("search/{input}")]
-        //Returns an exact match of records found by name, otherwise returns any .Contains match.
         public async Task<IActionResult> GetRecordsByInput(string input)
         {
 
-            var matchingRecords = await _showService.GetShowsExactMatchingRecordsAsync(input);
-
-            if(matchingRecords.IsFailure)
-            {
-                matchingRecords = await _showService.GetMatchingShowRecordsAsync(input);
-            };
-
+            var matchingRecords = await _showService.GetMatchingShowRecordsAsync(input);
+       
 
             return Ok(matchingRecords);                
      
         }
 
 
-        [HttpGet("suggest/{id1}/{id2}/{id3}")]
-        // Uses cosine similarity to recommend shows based on user's preference.
-        public async Task<IResult> GetRecommendedShows(int id1, int id2, int id3)
+        [HttpPost("suggest")]
+        public async Task<IResult> GetRecommendedShows(List<int> showIds, int topN=5)
         {
-            var recommendedShows = _showService.GetRecommendedShowsWithCosineSimilarity(new List<int> { id1, id2, id3 }, 5);
+            var recommendedShows = _showService.GetRecommendedShowsWithCosineSimilarity(showIds, 5);
 
 
             return recommendedShows.Result.Match(

@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Recommendit.Infrastructure;
 
@@ -11,9 +12,11 @@ using Recommendit.Infrastructure;
 namespace Recommendit.Infrastructure.Migrations
 {
     [DbContext(typeof(ShowContext))]
-    partial class ShowContextModelSnapshot : ModelSnapshot
+    [Migration("20250319173042_AlterColumnType")]
+    partial class AlterColumnType
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -66,7 +69,7 @@ namespace Recommendit.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Shows", (string)null);
+                    b.ToTable("Shows");
                 });
 
             modelBuilder.Entity("Recommendit.Infrastructure.ShowInfo", b =>
@@ -90,7 +93,7 @@ namespace Recommendit.Infrastructure.Migrations
                     b.HasIndex("ShowId")
                         .IsUnique();
 
-                    b.ToTable("ShowInfos", (string)null);
+                    b.ToTable("ShowInfos");
                 });
 
             modelBuilder.Entity("Recommendit.Infrastructure.ShowInfo", b =>

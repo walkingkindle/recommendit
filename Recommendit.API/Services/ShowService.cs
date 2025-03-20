@@ -15,31 +15,37 @@ public class ShowService : IShowService
 
     private readonly IVectorService _vectorService;
 
-    public ShowService(ShowContext dbContext)
+    public ShowService(ShowContext dbContext, IVectorService vectorService)
     {
         _context = dbContext;
+        _vectorService = vectorService;
     }
 
-    
-    //public async Task<Result<List<Show>>> GetRecommendedShowsWithCosineSimilarity(List<int> showIds,int topN=5)
-    //{
-    //    var allShows = GetShowInfos();
 
-    //    if (allShows.Result.IsFailure)
-    //    {
-    //        return Result<List<Show>>.Failure(allShows.Result.Error);
-    //    }
-    //    var userShowsVectors = allShows.Result.Value.Where(show => showIds.Contains(show.Id));
-    //    double[] averageVector = _vectorService.CalculateAverageVector(userShowsVectors.Select(x=> x.VectorDouble).ToList());
-    //    List<int> recommendedShowIds = await _vectorService.GetSimilarities(allShows.Result.Value, averageVector, topN);
-    //    List<int> filteredRecommendedShowIds = recommendedShowIds.Except(showIds).ToList();
+    public async Task<Result<List<Show>>> GetRecommendedShowsWithCosineSimilarity(List<int> showIds, int topN = 5)
+    {
+        var allShows = GetShowInfos();
 
-    //    var recommendedShows = await GetRecommendedShowByIds(showIds);
-        
-    //    return Result<List<Show>>.Success(recommendedShows.Value);
-       
-       
-    //}
+        if (allShows.Result.IsFailure)
+        {
+            return Result<List<Show>>.Failure(allShows.Result.Error);
+        }
+        var userShowsVectors = allShows.Result.Value
+            .Where(showInfo => showIds.Contains(showInfo.ShowId))
+            .Select(p=> Recommendit.Helpers.CollectionExtensions.ConvertStringVectorToDoubleArray(p.VectorDouble))
+            .ToList();
+        double[] averageVector = _vectorService.CalculateAverageVector(userShowsVectors);
+        List<int> recommendedShowIds = await _vectorService.GetSimilarities(allShows.Result.Value, averageVector, topN);
+        List<int> filteredRecommendedShowIds = recommendedShowIds.Except(showIds).ToList();
+
+        var recommendedShows = await GetRecommendedShowByIds(filteredRecommendedShowIds);
+
+        return Result<List<Show>>.Success(recommendedShows.Value);
+
+
+    }
+
+
 
     private async Task<Result<List<Show>>> GetRecommendedShowByIds(List<int> showIds)
     {
@@ -56,14 +62,12 @@ public class ShowService : IShowService
 
     private async Task<Result<List<ShowInfo>>> GetShowInfos()
     {
-        // Use Include to load the related ShowInfo entities
-        List<ShowInfo> showInfos = await _context.Shows
+        List<ShowInfo> showInfos = await _context.ShowInfos
             .AsNoTracking()
-            .Include(x => x.ShowInfo) // Include the ShowInfo
             .Select(x => new ShowInfo
             {
-                Id = x.ShowInfo.Id, // Use the ShowInfo Id
-                VectorDouble = x.ShowInfo.VectorDouble // Access the VectorDouble from ShowInfo
+                ShowId = x.ShowId, 
+                VectorDouble = x.VectorDouble
             })
             .ToListAsync();
 
@@ -87,7 +91,6 @@ public class ShowService : IShowService
                    Description = s.Description,
                    ImageUrl = s.ImageUrl,
                    ReleaseYear = s.ReleaseYear,
-                   FinalEpisodeAired = s.FinalEpisodeAired,
                    Score = s.Score,
                    OriginalCountry = s.OriginalCountry,
                    OriginalLanguage = s.OriginalLanguage
@@ -116,8 +119,9 @@ public class ShowService : IShowService
 
     public async Task<Result<List<Show>>> GetMatchingShowRecordsAsync(string input)
     {
-         var matchedRecords = await _context.Shows.Where(s => s.Name.Contains(input))
-                    .Take(10).Select(s => new Show
+         var matchedRecords = await _context.Shows.Where(s => s.Name.StartsWith(input))
+                    .Take(10)
+                    .Select(s => new Show
                     {
                         Id = s.Id,
                         Name = s.Name,
