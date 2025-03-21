@@ -8,5 +8,5 @@ public interface IVectorService
     public double[] CalculateAverageVector(List<double[]> vectors);
     
 
-    public Task<List<int>> GetSimilarities(List<ShowInfo> allShows, double[] userAverageVector, int topN);
+    public Task<List<int>> GetSimilarities(List<ShowInfoEssentials> allShows, double[] userAverageVector, int topN);
 }

@@ -5,6 +5,7 @@ using Recommendit.Result;
 using Recommendit.Interface;
 using Recommendit.Helpers;
 using Recommendit.Infrastructure;
+using Recommendit.DataRetriever.Models;
 
 namespace ShowPulse.Services;
 
@@ -15,27 +16,27 @@ public class ShowService : IShowService
 
     private readonly IVectorService _vectorService;
 
-    public ShowService(ShowContext dbContext, IVectorService vectorService)
+    private readonly IMongoDbService _dbService;
+
+    public ShowService(ShowContext dbContext, IVectorService vectorService, IMongoDbService dbService)
     {
         _context = dbContext;
         _vectorService = vectorService;
+        _dbService = dbService;
     }
 
 
     public async Task<Result<List<Show>>> GetRecommendedShowsWithCosineSimilarity(List<int> showIds, int topN = 5)
     {
-        var allShows = GetShowInfos();
 
-        if (allShows.Result.IsFailure)
-        {
-            return Result<List<Show>>.Failure(allShows.Result.Error);
-        }
-        var userShowsVectors = allShows.Result.Value
+        var allShows = await _dbService.GetShowInfoVectorsAsync();
+
+        var userShowsVectors = allShows
             .Where(showInfo => showIds.Contains(showInfo.ShowId))
-            .Select(p=> Recommendit.Helpers.CollectionExtensions.ConvertStringVectorToDoubleArray(p.VectorDouble))
+            .Select(p=> p.VectorDouble)
             .ToList();
         double[] averageVector = _vectorService.CalculateAverageVector(userShowsVectors);
-        List<int> recommendedShowIds = await _vectorService.GetSimilarities(allShows.Result.Value, averageVector, topN);
+        List<int> recommendedShowIds = await _vectorService.GetSimilarities(allShows, averageVector, topN);
         List<int> filteredRecommendedShowIds = recommendedShowIds.Except(showIds).ToList();
 
         var recommendedShows = await GetRecommendedShowByIds(filteredRecommendedShowIds);

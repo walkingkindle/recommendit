@@ -59,10 +59,10 @@ namespace ShowPulse.Engine
             }
         }
 
-        public async Task<List<int>> GetSimilarities(List<ShowInfo> allShows, double[] userAverageVector, int topN)
+        public async Task<List<int>> GetSimilarities(List<ShowInfoEssentials> allShows, double[] userAverageVector, int topN)
         {
             var similarities = allShows
-                .ToDictionary(s => s.ShowId, s => CalculateCosineSimilarity(userAverageVector, Recommendit.Helpers.CollectionExtensions.ConvertStringVectorToDoubleArray(s.VectorDouble)));
+                .ToDictionary(s => s.ShowId, s => CalculateCosineSimilarity(userAverageVector, s.VectorDouble));
 
             var sortedSimilarities = similarities.OrderByDescending(kv => kv.Value);
             var topShows = sortedSimilarities.Take(topN);

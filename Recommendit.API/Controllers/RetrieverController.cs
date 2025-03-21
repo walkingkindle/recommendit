@@ -1,5 +1,6 @@
 using DataRetriever.Models;
 using Microsoft.AspNetCore.Mvc;
+using Recommendit.DataRetriever.Models;
 using Recommendit.Models;
 using Recommendit.Result;
 
@@ -10,10 +11,12 @@ namespace ShowPulse.Controllers
     public class RetrieverController : ControllerBase
     {
         private readonly IShowsRetriever _showsRetriever;
+        private readonly IMongoDbService _mongoDbService;
 
-        public RetrieverController(IShowsRetriever showsRetriever)
+        public RetrieverController(IShowsRetriever showsRetriever, IMongoDbService mongoDbService)
         {
             _showsRetriever = showsRetriever;
+            _mongoDbService = mongoDbService;
         }
 
         [HttpGet("insert")]
@@ -42,9 +45,9 @@ namespace ShowPulse.Controllers
         [HttpGet("getVectors")]
         public async Task<IResult> GetVectors()
         {
-            var result = await _showsRetriever.GetShowVectorValue();
+            await _mongoDbService.SetShowInfoVectorsAsync();
 
-            return Results.Ok(result);
+            return Results.Ok();
         }
         
         

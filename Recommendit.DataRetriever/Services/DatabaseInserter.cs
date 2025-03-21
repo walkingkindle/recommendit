@@ -60,4 +60,5 @@ public class DatabaseOperator:IDatabaseOperator{
 
         return Result.Success();
     }
+
 }
