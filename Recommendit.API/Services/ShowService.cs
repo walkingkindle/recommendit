@@ -26,7 +26,7 @@ public class ShowService : IShowService
     }
 
 
-    public async Task<Result<List<Show>>> GetRecommendedShowsWithCosineSimilarity(List<int> showIds, int topN = 5)
+    public async Task<Result<List<Show>>> GetRecommendedShowsWithCosineSimilarity(List<int> showIds, int topN = 10)
     {
 
         var allShows = await _dbService.GetShowInfoVectorsAsync();
@@ -41,9 +41,7 @@ public class ShowService : IShowService
 
         var recommendedShows = await GetRecommendedShowByIds(filteredRecommendedShowIds);
 
-        return Result<List<Show>>.Success(recommendedShows.Value);
-
-
+        return recommendedShows.IsSuccess ? Result<List<Show>>.Success(recommendedShows.Value) : Result<List<Show>>.Failure(APIErrrors.ApiResponseError);
     }
 
 
@@ -58,49 +56,6 @@ public class ShowService : IShowService
         }
 
         return Result<List<Show>>.Success(shows);
-
-    }
-
-    private async Task<Result<List<ShowInfo>>> GetShowInfos()
-    {
-        List<ShowInfo> showInfos = await _context.ShowInfos
-            .AsNoTracking()
-            .Select(x => new ShowInfo
-            {
-                ShowId = x.ShowId, 
-                VectorDouble = x.VectorDouble
-            })
-            .ToListAsync();
-
-        if (showInfos.IsNullOrEmpty())
-        {
-            return Result<List<ShowInfo>>.Failure(DatabaseErrors.NullCollectionError);
-        }
-
-        return Result<List<ShowInfo>>.Success(showInfos);
-    }
-
-
-
-    public async Task<Result<List<Show>>> GetShowsExactMatchingRecordsAsync(string input)
-    {
-        var exactmatchedRecords = await _context.Shows.AsNoTracking().Where(s => s.Name == input)
-               .Select(s => new Show
-               {
-                   Id = s.Id,
-                   Name = s.Name,
-                   Description = s.Description,
-                   ImageUrl = s.ImageUrl,
-                   ReleaseYear = s.ReleaseYear,
-                   Score = s.Score,
-                   OriginalCountry = s.OriginalCountry,
-                   OriginalLanguage = s.OriginalLanguage
-               }).ToListAsync();
-
-        return exactmatchedRecords.IsNullOrEmpty()
-            ? Result<List<Show>>.Failure(DatabaseErrors.NullCollectionError)
-            : Result<List<Show>>.Success(exactmatchedRecords);
-
 
     }
 

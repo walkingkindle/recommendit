@@ -40,19 +40,8 @@ namespace Recommendit
             services.AddTransient<IDatabaseOperator, DatabaseOperator>();
             services.AddTransient<ITheMovieDbApiCaller, TheMovieDbApiCaller>();
 
-            services.AddTransient<ICacheService, CacheService>();
 
             services.AddTransient<IVectorService, VectorAIService>();
-
-            var redisConnection = new ConfigurationOptions
-            {
-                EndPoints = { {"redis-11976.c328.europe-west3-1.gce.redns.redis-cloud.com", 11976} },
-                User = "default",
-                Password = "3VbZjCc2iDymYpu1luN1uNyicTUUsLjo"
-            };
-
-            services.Configure<MongoDbSettings>(_configuration.GetSection("MongoDbSettings"));
-
 
             var connectionString = _configuration["ConnectionStrings:MongoDb"];
 
@@ -69,9 +58,7 @@ namespace Recommendit
             });
 
             services.AddTransient<IMongoDbService, MongoDbService>();
-            var multiplexer = ConnectionMultiplexer.Connect(redisConnection);
 
-            services.AddSingleton<IConnectionMultiplexer>(multiplexer);
 
             services.AddHttpClient<ITheMovieDbApiCaller, TheMovieDbApiCaller>();
 
@@ -82,12 +69,14 @@ namespace Recommendit
                 options.AddPolicy(name: MyAllowSpecificOrigins,
                     policy =>
                     {
-                        policy.WithOrigins("http://localhost:4200")
+                        policy.WithOrigins("http://localhost:57840")
                         .AllowAnyHeader()
                         .AllowAnyMethod()
                         .AllowCredentials();
                     });
             });
+
+            services.AddHostedService<StartupHealthCheckService>();
 
             services.Configure<TvDbSettings>(_configuration.GetSection("MovieDb"));
             services.AddSingleton<IValidateOptions<TvDbSettings>, ApiSettingsValidator>();

@@ -41,9 +41,9 @@ namespace ShowPulse.Controllers
 
 
         [HttpPost("suggest")]
-        public async Task<IResult> GetRecommendedShows(List<int> showIds, int topN=5)
+        public async Task<IResult> GetRecommendedShows(List<int> showIds, int topN=10)
         {
-            var recommendedShows = _showService.GetRecommendedShowsWithCosineSimilarity(showIds, 5);
+            var recommendedShows = _showService.GetRecommendedShowsWithCosineSimilarity(showIds, topN);
 
 
             return recommendedShows.Result.Match(
